@@ -1,0 +1,83 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-white);
+  border-bottom: 1px solid var(--border);
+  height: 56px;
+}
+
+.inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--green);
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
+}
+
+.logoAccent {
+  color: var(--text-primary);
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.link {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.link:hover {
+  color: var(--text-primary);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.btnOutline {
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--text-primary);
+  transition: background 0.15s;
+}
+
+.btnOutline:hover {
+  background: var(--bg-surface);
+}
+
+.btnPrimary {
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--green);
+  color: white;
+  transition: background 0.15s;
+}
+
+.btnPrimary:hover {
+  background: var(--green-dark);
+}

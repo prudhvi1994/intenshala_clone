@@ -1,0 +1,145 @@
+.panel {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ── Active filters ── */
+.activeFilters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  background: var(--green-light);
+  color: var(--green-muted);
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.chip button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--green-muted);
+  padding: 0;
+  font-size: 13px;
+  line-height: 1;
+  transition: opacity 0.15s;
+}
+
+.chip button:hover {
+  opacity: 0.6;
+}
+
+.clearAll {
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: var(--green);
+  text-decoration: underline;
+  padding: 4px 6px;
+  transition: opacity 0.15s;
+}
+
+.clearAll:hover {
+  opacity: 0.7;
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.count {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.count strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.sort {
+  font-size: 13px;
+  padding: 6px 10px;
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-md);
+  background: var(--bg-white);
+  color: var(--text-primary);
+  outline: none;
+}
+
+/* ── Empty / loading state ── */
+.empty {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--text-secondary);
+}
+
+.empty i {
+  display: block;
+  font-size: 48px;
+  margin-bottom: 1rem;
+  color: var(--border-hover);
+}
+
+.emptyTitle {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.emptySub {
+  font-size: 13px;
+}
+
+/* ── Pagination ── */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 1.5rem;
+}
+
+.pageBtn {
+  padding: 6px 12px;
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-md);
+  background: var(--bg-white);
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: all 0.15s;
+  display: flex;
+  align-items: center;
+}
+
+.pageBtn:hover:not(:disabled):not(.pageBtnActive) {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+.pageBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pageBtnActive {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+  font-weight: 600;
+}
